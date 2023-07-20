@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Data por Dias Úteis</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <section class="main">
+    <div class="container">
+        <h1>Calculadora de Data por Dias Úteis</h1>
+
+        <label for="dataInicial">Data Inicial:</label>
+        <input type="text" id="dataInicial" class="flatpickr" placeholder="Selecione uma data no calendário abaixo">
+        </div>
+        
+        <div class="container2">
+        <label for="diasUteis">Dias Úteis:</label>
+        <input type="number" id="diasUteis">
+
+        <button onclick="calcularData()">Calcular</button>
+
+        <h2 id="dataFinal"></h2>
+
+        <div id="relatorio"></div>
+    </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/pt.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
